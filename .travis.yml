@@ -3,11 +3,3 @@ dist: bionic
 arch:
   - ppc64le
   
-ant:
-  - 1.10.9
- 
-script: 
-  - ant
-  - ant download
-  - cp -a  /usr/share/java/.  ${ANT_HOME}/lib/
-  - ant test
