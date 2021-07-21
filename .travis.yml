@@ -8,4 +8,6 @@ addons:
       - ant
 script:
   - ant
+  - ant download
+  - ant test
   
