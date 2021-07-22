@@ -7,7 +7,7 @@ arch:
 addons:
   apt:
     packages:
-      - ant-1.10.9
+      - ant
       - ant-optional
 
 
