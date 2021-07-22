@@ -9,11 +9,11 @@ addons:
     packages:
       - ant
       - ant-optional
-      - junit-4.11
+      
 
 
 script:
   - ant
-  - ant download
+  - ant download junit-4.11
   - ant test 
   
