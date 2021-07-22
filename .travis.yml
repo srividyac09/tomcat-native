@@ -1,20 +1,11 @@
 language: java
-jdk:
-  - openjdk8
+
 dist: bionic
 arch:
   - ppc64le
-addons:
-  apt:
-    packages:
-      - ant
-      - ant-optional
-      
-before_install:
-  - echo $(ant -version)
+
   
 script:
-  - ant
-  - ant download 
+  - mvn install
   
   
