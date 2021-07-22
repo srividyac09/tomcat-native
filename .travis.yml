@@ -7,7 +7,6 @@ arch:
 addons:
   apt:
     packages:
-      - openjdk-8-jdk
       - ant 1.10.9
       - ant-optional
 
