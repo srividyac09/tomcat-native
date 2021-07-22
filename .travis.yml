@@ -20,7 +20,7 @@ addons:
     fi
   - export PATH="$JAVA_HOME/bin:$PATH"
   - java -version
-  - ant -version
+  - ant  -version
 install:
   - ant download
       
