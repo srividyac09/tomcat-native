@@ -8,6 +8,7 @@ addons:
   apt:
     packages:
       - openjdk-8-jdk
+      - ant 1.10.8
       - ant-optional
 
 
