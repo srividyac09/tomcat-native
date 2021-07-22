@@ -5,10 +5,8 @@ arch:
 addons:
   apt:
     packages:
-      - ant
-      - ant-optional
-      - git
-      - junit
+      - ant 1.10.9
+      
 before_install:
 - sudo apt-get -qq update
 # ant-optional is needed for ant junit
