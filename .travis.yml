@@ -7,12 +7,9 @@ arch:
 addons:
   apt:
     packages:
-      - ant 1.10.8
+      - ant 
       
 script:
-  - git clone https://github.com/apache/tomcat-native.git
-  - cd tomcat-native
-  - git checkout 1.2.30
   - ant
   - ant test
   
