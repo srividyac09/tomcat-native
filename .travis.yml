@@ -11,5 +11,5 @@ addons:
       
 script:
   - ant
-  - ant test
+  - ant test -lib ./lib/junit-4.12.jar
   
