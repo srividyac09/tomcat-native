@@ -9,10 +9,11 @@ addons:
     packages:
       - openjdk-8-jdk
       - ant-optional
-install:
+
   - ant download
       
 script:
   - ant
+  - ant download
   - ant test 
   
