@@ -9,6 +9,7 @@ addons:
     packages:
       - ant
       - ant-optional
+      - junit-4.11
 
 
 script:
