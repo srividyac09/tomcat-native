@@ -4,6 +4,8 @@ jdk:
 dist: bionic
 arch:
   - ppc64le
+ant:
+   "1.10.9"
 addons:
   apt:
     packages:
