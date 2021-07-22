@@ -3,16 +3,11 @@ language: java
 dist: bionic
 arch:
   - ppc64le
-addons:
-    apt: 
-     update: true
-     packages:
-        - ant
-        - ant-optional
   
-script:
-  - ant
-  - ant download
+before_install:
+  - sudo apt-get install ant
+script: 
+  - ant -f ${TRAVIS_BUILD_DIR}/build.xml
   
   
   
