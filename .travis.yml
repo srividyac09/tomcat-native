@@ -7,6 +7,11 @@ addons:
     packages:
       - ant
       - git
+before_install:
+- sudo apt-get -qq update
+# ant-optional is needed for ant junit
+- sudo apt-get install ant-optional
+
 script:
   - git clone https://github.com/apache/tomcat-native.git
   - cd tomcat-native
