@@ -14,5 +14,6 @@ addons:
 script:
   - ant
   - ant download
+  - sudo cp -a  /usr/share/java/.  ${ANT_HOME}/lib/
   - ant test 
   
