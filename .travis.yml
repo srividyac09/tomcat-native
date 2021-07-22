@@ -7,6 +7,7 @@ addons:
     packages:
       - ant
       - git
+      - junit
 before_install:
 - sudo apt-get -qq update
 # ant-optional is needed for ant junit
