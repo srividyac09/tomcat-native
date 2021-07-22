@@ -12,6 +12,5 @@ script:
   - cd tomcat-native
   - git checkout 1.2.30
   - ant
-  - ant download
   - ant test
   
