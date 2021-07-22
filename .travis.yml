@@ -7,9 +7,24 @@ arch:
 addons:
   apt:
     packages:
-      - ant 
+      - openjdk-8-jdk
+      - ant-optional
+ before_install:
+  - lscpu
+  - |
+    if [[ "$TRAVIS_CPU_ARCH" != "ppc64le" ]]; then
+     export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-${TRAVIS_CPU_ARCH}/"
+    else
+     export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-ppc64el/"
+     export JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF8  # To fix the unmappable character 
+    fi
+  - export PATH="$JAVA_HOME/bin:$PATH"
+  - java -version
+  - ant -version
+install:
+  - ant download
       
 script:
   - ant
-  - ant test -lib ./lib/junit-4.12.jar
+  - ant test 
   
