@@ -4,8 +4,6 @@ jdk:
 dist: bionic
 arch:
   - ppc64le
-ant:
-   "1.10.9"
 addons:
   apt:
     packages:
@@ -15,8 +13,6 @@ addons:
 before_install:
   - echo $(ant -version)
   
-
-
 script:
   - ant
   - ant download 
