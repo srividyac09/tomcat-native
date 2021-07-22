@@ -7,7 +7,7 @@ arch:
 before_install:
   - sudo apt-get install ant
 script: 
-  - ant -f ${TRAVIS_BUILD_DIR}/build.xml
+  - ant 
   - ant download
   - ant test
   
