@@ -4,8 +4,11 @@ dist: bionic
 arch:
   - ppc64le
   
-before_install:
-  - sudo apt-get install ant
+addons:
+  apt:
+    packages:
+      - ant
+      - ant-optional
 script: 
   - ant 
   - ant download
