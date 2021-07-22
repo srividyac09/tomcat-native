@@ -10,10 +10,12 @@ addons:
       - ant
       - ant-optional
       
+before_install:
+  - echo $(ant -version)
 
 
 script:
   - ant
-  - ant download junit-4.11
+  - ant download 
   - ant test 
   
