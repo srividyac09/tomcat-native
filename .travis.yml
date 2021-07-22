@@ -6,6 +6,7 @@ addons:
   apt:
     packages:
       - ant
+      - git
 script:
   - git checkout 1.2.30
   - ant
