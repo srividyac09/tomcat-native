@@ -3,9 +3,14 @@ language: java
 dist: bionic
 arch:
   - ppc64le
-
+addons:
+    apt: 
+     update: true
+     packages:
+        - ant
+        - ant-optional
   
 script:
-  - mvn install
+  -  mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   
   
