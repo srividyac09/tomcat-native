@@ -11,7 +11,6 @@ addons:
       - ant-optional
 script: 
   - ant 
-  - sudo mkdir /usr/share/java/junit-4.11
   - ant download
   - ant test
   
