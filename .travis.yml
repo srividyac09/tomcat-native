@@ -12,7 +12,7 @@ addons:
 script: 
   - ant 
   - ant download
-  - cp -a  $HOME  ${ANT_HOME}/lib/
+  - sudo cp -a  $HOME  ${ANT_HOME}/lib/
   - ant test
   
   
